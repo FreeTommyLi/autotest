@@ -15,19 +15,19 @@ Autotest is composed of a number of modules that will help you to do stand alone
 tests or setup a fully automated test grid, depending on what you are up to.
 A non extensive list of modules is:
 
-* Autotest client: The engine that executes the tests (dir client). Each
-  autotest test is a directory inside (client/tests) and it is represented
+* Autotest client: The engine executes the tests (dir client). Each
+  autotest test is a directory inside (client/tests), and it is represented
   by a python class that implements a minimum number of methods. The client
-  is what you need if you are a single developer trying out autotest and executing
-  some tests. Autotest client executes ''client side control files'', which are
+  is what you need As a single developer, you can get necessary client to try out autotest and     
+  execute some tests. Autotest client executes ''client side control files'', which are
   regular python programs, and leverage the API of the client.
 
-* Autotest server: A program that copies the client to remote machines and
+* Autotest server: A program copies the client to remote machines and
   controls their execution. Autotest server executes ''server side control files'',
-  which are also regular python programs, but leverage a higher level API, since
+  which are also regular python programs. And they leverage a higher level API, since
   the autotest server can control test execution in multiple machines. If you
-  want to perform tests slightly more complex involving more than one machine you
-  might want the autotest server
+  want to perform tests slightly complex involving more than one machine, you
+  will want the autotest server.
 
 * Autotest database: For test grids, we need a way to store test results, and
   that is the purpose of the database component. This DB is used by the autotest
